@@ -4,7 +4,7 @@ My Projects Course
 
 Area focada no desenvolvimento de códigos dos exemplos do curso de Java
 
-###Areas Exploradas:
+Areas Exploradas:
 - Java
 - POO
 - Spring Boot
