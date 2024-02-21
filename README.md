@@ -3,11 +3,13 @@ My Projects Course
 
 <h1></h1>
 Esclarecimentos:
+
 1) Area focada no desenvolvimento de códigos dos exemplos do curso de Java.
 2) Cada Pasta deste Repositório é destinada a um projeto.
 3) Todos estes projetos são utilizados com a mesma IDE e demias informações a baixo.
 
 Como Rodar as aplicações ?
+
 1) Instale a IDE Eclipse.
 2) Instale o Java mais atual possivel(atual:21)
 3) Instale o MySQL e MySQL Workbench
