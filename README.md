@@ -22,7 +22,7 @@ Areas Exploradas:
 - Spring Boot
 - Data e Date
 - Java FX
-- Javaa EE
+- Java EE
 - Hibernate
 - Git e GitHub
 - JPA
