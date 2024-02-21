@@ -17,3 +17,9 @@ Areas Exploradas:
 - API Rest
 - NoSQL
 - MongoDB
+
+Ferramentas de Desenvolvimento:
+- Java 21
+- IDE Eclipse
+- MySQL
+- MySQL Workbench 8.0 CE
