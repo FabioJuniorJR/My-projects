@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -30,6 +32,7 @@ public class User implements Serializable{
 	 * ja colocamos na outra classe agora colocamos aqui tambem porem 
 	 * com o atributo de relação com  outra clase que é o"client" -> @ManyToOne(mappedBy = "client")
 	*/
+	@JsonIgnore //Com esta anotação, evitasse o LUPING de busca, entre ficar buscando Cliente tem Pedidos e Pedidos tem Clientes
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();//Pra est coleção ou qwulquer outr utilizasse somente o metodo GET. Nunca é mudada com SET
 	
