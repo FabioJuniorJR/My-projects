@@ -23,4 +23,24 @@ public class UserService {
 		Optional<User> obj = repository.findById(id);
 		return obj.get();// Operação GET do OPTIONAL retorna o objeto USER que etiver dentro do obj
 	}
+	
+	public User insert(User obj) {
+		return repository.save(obj);
+		
+	}
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
+	public User update(Long id, User obj) {
+		User entity = repository.getReferenceById(id);//Aqui deixa o Objeto monitorado pelo BD
+		updateData(entity, obj);
+		return repository.save(entity);
+	}
+
+	private void updateData(User entity, User obj) {
+		entity.setName(obj.getName());
+		entity.setEmail(obj.getEmail());
+		entity.setPhone(obj.getPhone());
+		
+	}
 }
