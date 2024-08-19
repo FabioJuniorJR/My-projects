@@ -38,6 +38,7 @@ public class Student{
     public List<Nota> getNotas() {
         return notas;
     }
+    //lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
     /*public void setNotas(List<Nota> notas) {
         this.notas = notas;
     }*/
