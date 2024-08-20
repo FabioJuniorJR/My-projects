@@ -4,34 +4,47 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Date;
-    
-    public class SchoolManagerPOO {        
+
+    public class SchoolManagerPOO {
+
         private static ArrayList<Student> listStudent = new ArrayList<>();
-        
+        private static Scanner io = new Scanner(System.in);//io - Output and Input
+
         //METHOD ADD Student
         public static void addStudent(){
             //ArrayList listAuxStudent = new ArrayList<>();
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
+
             System.out.println("Enter the Student name: ");
-            String name = io.nextLine();
-            
+            String name = io.next();
+
             System.out.println("Enter the CPF Student: ");
             int cpf = io.nextInt();
 
             System.out.println("Enter the Birth Srudent dd/mm/aaaa: ");
-            String birth = io.nextLine();
-            Date birthFormated = dateFormat.parse(birth);
+            String birth = io.next();
+
+
+
+           
+
+            //Date birthFormated = dateFormat.parse(birth);
 
             /*
-             * Criar Método ID
-             * Descriçao: Pasta melhorias: https://github.com/FabioJuniorJR/My-projects/blob/18e17e847018ea3e40ce445cd2796b4a4649c6c3/SchoolManagerBasicPOO/melhorias.txt
-             */
+             
+Criar Método ID
+Descriçao: Pasta melhorias: https://github.com/FabioJuniorJR/My-projects/blob/18e17e847018ea3e40ce445cd2796b4a4649c6c3/SchoolManagerBasicPOO/melhorias.txt*/
 
             Student student = new Student(/*Passar parametros peios aqui*/ name, cpf, birth);
             listStudent.add(student);
+
+           for(Student listStudent : listStudent){
+                System.out.println(listStudent.toString());
+           }
+            int x = 7;
             //listAuxStudent.add(student);
-            //listStudent.add(listAuxStudent);                        
+            //listStudent.add(listAuxStudent);
         }
 
         //METHOD REMOVE Student
@@ -42,19 +55,18 @@ import java.util.Date;
 
         //METHOD CHANGE Student
         public void changeStudent(){
-           
-            
+
+
         }
 
         //Choose Student
             //Procurar utilizaando ID do aluno em um loop
         public void chooseStudent(){
-          
-            
+
+
         }
 
         public static void main(String[] args) {
-            Scanner io = new Scanner(System.in);//io - Output and Input
             int option;
 
             System.out.println();
@@ -85,13 +97,13 @@ import java.util.Date;
                     case 4:
                         //chooseStudent();
                         break;
-                
+
                     default:
                     System.out.println("option invalid !!!");
                     System.out.println("Choice other option");
                         break;
                 }
-            }  
+            }
             io.close();
 
 
