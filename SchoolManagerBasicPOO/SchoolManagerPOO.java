@@ -9,12 +9,18 @@ import java.util.Scanner;
         //METHOD ADD Student
         public void addStudent(){
 
-            System.out.println();
-            String name;
+            System.out.println("Enter the Student name: ");
+            String name = io.next();
             
-            System.out.println();
-            System.out.println();
-            //Student student = new Student();
+            System.out.println("Enter the CPF Student: ");
+            iny cpf = io.nextInt();
+
+            /*
+             * Criar Método ID
+             * Descriçao: Pasta melhorias: https://github.com/FabioJuniorJR/My-projects/blob/18e17e847018ea3e40ce445cd2796b4a4649c6c3/SchoolManagerBasicPOO/melhorias.txt
+             */
+
+            Student student = new Student(/*Passar parametros peios aqui*/ name, cpf);
         }
 
         //METHOD REMOVE Student
