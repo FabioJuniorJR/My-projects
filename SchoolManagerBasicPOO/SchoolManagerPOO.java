@@ -1,26 +1,37 @@
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Date;
     
     public class SchoolManagerPOO {        
-        private ArrayList<Student> student = new ArrayList<>();
-
+        private static ArrayList<Student> listStudent = new ArrayList<>();
+        
         //METHOD ADD Student
-        public void addStudent(){
+        public static void addStudent(){
+            //ArrayList listAuxStudent = new ArrayList<>();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
             System.out.println("Enter the Student name: ");
-            String name = io.next();
+            String name = io.nextLine();
             
             System.out.println("Enter the CPF Student: ");
-            iny cpf = io.nextInt();
+            int cpf = io.nextInt();
+
+            System.out.println("Enter the Birth Srudent dd/mm/aaaa: ");
+            String birth = io.nextLine();
+            Date birthFormated = dateFormat.parse(birth);
 
             /*
              * Criar Método ID
              * Descriçao: Pasta melhorias: https://github.com/FabioJuniorJR/My-projects/blob/18e17e847018ea3e40ce445cd2796b4a4649c6c3/SchoolManagerBasicPOO/melhorias.txt
              */
-//testando
-            Student student = new Student(/*Passar parametros peios aqui*/ name, cpf);
+
+            Student student = new Student(/*Passar parametros peios aqui*/ name, cpf, birth);
+            listStudent.add(student);
+            //listAuxStudent.add(student);
+            //listStudent.add(listAuxStudent);                        
         }
 
         //METHOD REMOVE Student
@@ -50,13 +61,12 @@ import java.util.Scanner;
             System.out.println("|----------------------------------|");
             System.out.println("|what do you want to do now ???    |");
             System.out.println("|----------------------------------|");
-            System.out.println("|1 - finish                        |");
-            System.out.println("|2 - register stuednt              |");
-            System.out.println("|3 - remove student                |");
-            System.out.println("|4 - search for student            |");
+            System.out.println("|0 - finish                        |");
+            System.out.println("|1 - register stuednt              |");
+            System.out.println("|2 - remove student                |");
+            System.out.println("|3 - search for student            |");
             System.out.println("|----------------------------------|");
             System.out.println();
-
 
             option = io.nextInt();
 
@@ -67,13 +77,13 @@ import java.util.Scanner;
                         addStudent();
                         break;
                     case 2:
-                        removeStudent();
+                        //removeStudent();
                         break;
                     case 3:
-                        changeStudent();
+                        //changeStudent();
                         break;
                     case 4:
-                        chooseStudent();
+                        //chooseStudent();
                         break;
                 
                     default:
@@ -82,6 +92,7 @@ import java.util.Scanner;
                         break;
                 }
             }  
+            io.close();
 
 
         }
