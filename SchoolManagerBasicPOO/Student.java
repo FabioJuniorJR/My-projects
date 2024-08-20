@@ -1,16 +1,19 @@
 import java.util.List;
 
 public class Student{
-    private char id;
+    //private char id;
     private String name;
     private int CPF;
+    Date birth;
     private List<Nota>notas;
 
-    public Student(char id, String name, int cPF) {
-        this.id = id;
+    public Student(/*char id*/ String name, int CPF, String birth) {
+        //this.id = id;
         this.name = name;
         CPF = cPF;
+        this.birth = birth;
     }
+   
     public char getId() {
         return id;
     }
@@ -31,17 +34,22 @@ public class Student{
         return CPF;
     }
 
-    public void setCPF(int cPF) {
+    public void setCPF(int CPF) {
         CPF = cPF;
     }
     
     public List<Nota> getNotas() {
         return notas;
     }
-    //lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
     /*public void setNotas(List<Nota> notas) {
         this.notas = notas;
     }*/
+    public Date getBirth() {
+        return birth;
+    }
+    public void setBirth(Date birth) {
+        this.birth = birth;
+    }
 
     
 }
