@@ -2,7 +2,7 @@ Hello Welcome to the School Mangement POO project
 
 Update´s !!!
 
-(Método add +1 ID Student
+(Método add +1 ID Student)
 1 - Creat a method that places I for the student
 1.1 - This Method will read the list of the student and ther ID
 1.2 - It Will save the last ID os the last Student and ADD +1 to set the Student current

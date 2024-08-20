@@ -4,13 +4,13 @@ public class Student{
     //private char id;
     private String name;
     private int CPF;
-    Date birth;
+    private String birth;
     private List<Nota>notas;
 
     public Student(/*char id*/ String name, int CPF, String birth) {
         //this.id = id;
         this.name = name;
-        CPF = cPF;
+        this.CPF = CPF;
         this.birth = birth;
     }
    
@@ -35,7 +35,7 @@ public class Student{
     }
 
     public void setCPF(int CPF) {
-        CPF = cPF;
+        this.CPF = CPF;
     }
     
     public List<Nota> getNotas() {
@@ -44,11 +44,21 @@ public class Student{
     /*public void setNotas(List<Nota> notas) {
         this.notas = notas;
     }*/
-    public Date getBirth() {
+    public void setBirth(String birth) {
+        this.birth = birth;
+    }
+
+    public void setNotas(List<Nota> notas) {
+        this.notas = notas;
+    }
+
+    public String getBirth() {
         return birth;
     }
-    public void setBirth(Date birth) {
-        this.birth = birth;
+
+    @Override
+    public String toString() {
+        return "Student [ Name = " + name + ", CPF = " + CPF + ", birth = " + birth + ", notas = " + notas + " ]";
     }
 
     
