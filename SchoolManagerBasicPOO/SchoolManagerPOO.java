@@ -46,7 +46,13 @@ public class SchoolManagerPOO {
     }
 
     public static void chooseStudent() {
-         
+        System.out.println("Enter CPF to the Student: ");
+        double cpfSearch = io.nextDouble();
+         for(Student listStudentSearch : listStudent){
+            if(listStudentSearch.getCPF() == cpfSearch){
+                
+            }
+         }
     }
 
     public static int mainMenu(){
@@ -92,7 +98,8 @@ public class SchoolManagerPOO {
                     optionMain = mainMenu();
                     break;
                 case 4:
-                    //chooseStudent();
+                    chooseStudent();
+                    optionMain = mainMenu();
                     break;
                 default:
                     System.out.println("option invalid !!!");
