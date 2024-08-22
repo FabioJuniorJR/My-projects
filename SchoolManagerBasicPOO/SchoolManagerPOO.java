@@ -1,6 +1,7 @@
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,7 +9,8 @@ import java.util.Date;
 
 public class SchoolManagerPOO {
 
-    private static ArrayList<Student> listStudent = new ArrayList<>();
+    static ArrayList<Student> listStudent = new ArrayList<>();
+ 
     private static Scanner io = new Scanner(System.in);// io - Output and Input
 
     // METHOD ADD Student
@@ -50,9 +52,34 @@ public class SchoolManagerPOO {
         double cpfSearch = io.nextDouble();
          for(Student listStudentSearch : listStudent){
             if(listStudentSearch.getCPF() == cpfSearch){
-                
+                /*
+                 * IMPLEMENTS
+                 * 
+                 * Altera:
+                 * nome
+                 * nascimento
+                 * cpf
+                 */
+
             }
          }
+    }
+
+    public static void addNote(){
+        
+    }
+
+    public static void NoteStudent(){
+        Note note = new Note();
+        System.out.println("Enter the Student note1: ");
+        int note1 = io.nextInt();
+        note.setNote1(note1);
+        System.out.println("Enter the Student note2: ");
+        int note2 = io.nextInt();
+        note.setNote2(note2);
+        System.out.println("Enter the Student note3: ");
+        int note3 = io.nextInt();
+        note.setNote3(note3);
     }
 
     public static int mainMenu(){
