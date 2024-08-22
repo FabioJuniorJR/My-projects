@@ -27,42 +27,35 @@ public class SchoolManagerPOO {
 
         Student student = new Student(/* Passar parametros peios aqui */ name, cpf, birth);
         listStudent.add(student);
-
         // Date birthFormated = dateFormat.parse(birth);
-
-        /*
-         * 
-         * Criar Método ID
-         * Descriçao: Pasta melhorias:
-         * https://github.com/FabioJuniorJR/My-projects/blob/
-         * 18e17e847018ea3e40ce445cd2796b4a4649c6c3/SchoolManagerBasicPOO/melhorias.txt
-         */
-
-        // listAuxStudent.add(student);
-        // listStudent.add(listAuxStudent);
-
     }
 
-    // METHOD REMOVE Student
+    
     public void removeStudent() {
 
     }
 
-    // METHOD CHANGE Student1
-    public static void changeStudent() {
+    public static void changeStudent(){
+
+    }
+
+    public static void printStudent() {
         for (Student listStudentPrint : listStudent) {
             System.out.println(listStudentPrint.toString());
         }
     }
 
-    // Choose Student
-    // Procurar utilizaando ID do aluno em um loop
     public static void chooseStudent() {
-
+         
     }
 
     public static int mainMenu(){
         int option;
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
         System.out.println();
         System.out.println("|----------------------------------|");
         System.out.println("|what do you want to do now ???    |");
@@ -74,8 +67,9 @@ public class SchoolManagerPOO {
         System.out.println("|4 - chooseStudent                 |");
         System.out.println("|5 - realod                        |");
         System.out.println("|----------------------------------|");
-        System.out.println();
+        System.out.print("|Option: ");
         option = io.nextInt();
+        System.out.println("|----------------------------------|");
         return option;
     }
 
@@ -94,7 +88,7 @@ public class SchoolManagerPOO {
                     // removeStudent();
                     break;
                 case 3:
-                    changeStudent();
+                    printStudent();
                     optionMain = mainMenu();
                     break;
                 case 4:
@@ -102,7 +96,8 @@ public class SchoolManagerPOO {
                     break;
                 default:
                     System.out.println("option invalid !!!");
-                    System.out.println("Choice other option");
+                    System.out.print("Choice other option");
+                    optionMain = mainMenu();
                     break;
             }
         }
