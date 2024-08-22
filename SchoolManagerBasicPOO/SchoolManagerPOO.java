@@ -48,10 +48,10 @@ public class SchoolManagerPOO {
 
     }
 
-    // METHOD CHANGE Student
+    // METHOD CHANGE Student1
     public static void changeStudent() {
-        for (Student listStudent : listStudent) {
-            System.out.println(listStudent.toString());
+        for (Student listStudentPrint : listStudent) {
+            System.out.println(listStudentPrint.toString());
         }
     }
 
@@ -95,6 +95,7 @@ public class SchoolManagerPOO {
                     break;
                 case 3:
                     changeStudent();
+                    optionMain = mainMenu();
                     break;
                 case 4:
                     //chooseStudent();
