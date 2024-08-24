@@ -1,4 +1,3 @@
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -28,11 +27,10 @@ public class SchoolManagerPOO {
         String birth = io.next();
 
         Student student = new Student(/* Passar parametros peios aqui */ name, cpf, birth);
-        listStudent.add(student);
+        //listStudent.add(student);
         // Date birthFormated = dateFormat.parse(birth);
     }
 
-    
     public void removeStudent() {
 
     }
@@ -65,7 +63,8 @@ public class SchoolManagerPOO {
          }
     }
 
-    public static void addNote(){
+    public static void changeNote(){
+        
         
     }
 
