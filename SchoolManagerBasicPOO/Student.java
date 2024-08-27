@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student{
@@ -5,15 +6,17 @@ public class Student{
     private String name;
     private int CPF;
     private String birth;
-    private List<Nota>notas;
+    private List<Note>notas;
 
-    public Student(/*char id*/ String name, int CPF, String birth) {
-        //this.id = id;
-        this.name = name;
-        this.CPF = CPF;
-        this.birth = birth;
-    }
+    
    
+    public Student(String name, int cPF, String birth) {
+        this.name = name;
+        CPF = cPF;
+        this.birth = birth;
+        this.notas = new ArrayList<>(); 
+    }
+
     public char getId() {
         return id;
     }
@@ -38,7 +41,7 @@ public class Student{
         this.CPF = CPF;
     }
     
-    public List<Nota> getNotas() {
+    public List<Note> getNotas() {
         return notas;
     }
     /*public void setNotas(List<Nota> notas) {
@@ -48,7 +51,7 @@ public class Student{
         this.birth = birth;
     }
 
-    public void setNotas(List<Nota> notas) {
+    public void setNotas(List<Note> notas) {
         this.notas = notas;
     }
 
@@ -56,9 +59,17 @@ public class Student{
         return birth;
     }
 
+    public void addNote(Note notas){
+        this.notas.add(notas);
+    }
+
+    public List<Note> getNote(){
+        return notas;
+    } 
+
     @Override
     public String toString() {
-        return "Student [ Name = " + name + ", CPF = " + CPF + ", birth = " + birth + ", notas = " + notas + " ]";
+        return "Student [ Name = " + name + ", CPF = " + CPF + ", birth = " + birth + ", notas =[ " + notas.toString() + " ]";
     }
 
     

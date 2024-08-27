@@ -1,14 +1,16 @@
-public class Nota {
+public class Note {
     
     private int note1;
     private int note2;
     private int note3;
     private double average;
 
-    public Nota() {
-        //Nãao tem paraametros iniciais
-        //Não é necessário começar com notas
-        //A NOTAS SÃO ADICIONADAAS COM O TEMPO
+   
+
+    public Note(int note1, int note2, int note3) {
+        this.note1 = note1;
+        this.note2 = note2;
+        this.note3 = note3;
     }
 
     public int getNote1() {
@@ -43,6 +45,13 @@ public class Nota {
         average = ((note1 / 3.5) + (note2/3.5) + (note3/3));
     }
 
+    @Override
+    public String toString() {
+        return "Note [average=" + average + ", getNote1()=" + getNote1() + ", getNote2()=" + getNote2()
+                + ", getNote3()=" + getNote3() + average + "]";
+    }
+    
+    
     
 
     
