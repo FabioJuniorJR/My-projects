@@ -100,7 +100,7 @@ public class SchoolManagerPOO {
                     break;
                 default:
                     System.out.println("option invalid !!!");
-                    System.out.println("Choice other option");
+                    System.out.println("Choice other option !!!");
                     break;
             }
         }
