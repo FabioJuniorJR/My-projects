@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+    background-image: url(../img/abstract-uv-ultraviolet-light-composition.jpg);
+    background-position: center;
+    background-size: cover;/*A imagem ira cobrir toda a tela*/
+    background-repeat: no-repeat; /*NAO repetira a imagem*/
+    height: 100vh; /*A altura sera do tamanho da tela*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    /*Colocar ssobra perta em volta para daar profundidade e diferrenca de fundo branco*/
+    margin-top: 20px;
+    margin-right: 180px;
+    margin-left: 180px;
+    width: 800px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e6eb;
+    border-radius: 7px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.header img{
+    width: 40px;
+    height: 40px;
+    margin-left: 33px;
+}
+
+.nav-header ul{
+    display: flex; /*EXIBE EM LINHA*/
+    padding: 5px;
+    gap: 20px;/*ESPAÇAMENTOS ENTRE OS LINKS*/
+    list-style: none; /*TIRA OSS PONTINHOS DE MARCAÇÃAO DE ITEM(DEIXA APENAS O TEXTO)*/
+    margin-right: 20px;
+}
+
+.nav-header button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.div-information{
+    height: 100px;
+    width: 100px;
+    background-color: #e1e6eb;
+    margin-top: 100px;
+    border-radius: 18px;
+    width: 30%;
+    height: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.div-information form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+.div-information form input{
+    padding: 15px;
+    border-radius: 7px;
+    border-style: none;
+    margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.div-information form button{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 10%;
+    background-color: #e1e6eb;
+}
+
+.div-information .areas{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    
+}
+
+#itens {
+    
+}
