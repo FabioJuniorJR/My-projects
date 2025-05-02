@@ -5,31 +5,11 @@ Repositório destinado aos meus projetos pessoais para treino e desenvolvimento 
 📁 Estrutura do Repositório
 - IMC-CALCULADORA/: Projeto de cálculo de Índice de Massa Corporal (IMC).
 - Dev Treino(Java-Python)/: Projetos diversos para prática de Java e Python.
-
-## 🧮 IMC-CALCULADORA
-Descrição
-Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo ao usuário inserir peso e altura para obter o resultado e a classificação correspondente.
-
-## 🛠️ Tecnologias Utilizadas
-- ⚛️ **React** – Framework JavaScript para criação de interfaces de usuário.
-- 🟨 **JavaScript** – Lógica e interatividade.
-- 🎨 **CSS** – Estilização da interface.
-- 🌐 **HTML** – Estrutura da página.
-- 🟢 **Node.js** – Ambiente de execução JavaScript no backend e ferramentas de build.
-- 💻 **Visual Studio Code** – Editor de código utilizado.
-
-O ChatGPT disse:
-Perfeito, com base na sua explicação, aqui está um README.md simples, bem formatado e focado no projeto de IMC usando React, JavaScript, HTML, CSS e Node.js:
-
-markdown
-Copiar
-Editar
-# 🧮 Calculadora de IMC
+---
+## 🧮 Calculadora de IMC
 
 Este projeto é uma **calculadora de IMC (Índice de Massa Corporal)** desenvolvida com **React**, **JavaScript**, **HTML** e **CSS**, com o objetivo de fornecer uma aplicação web simples, funcional e moderna para cálculo de IMC.
 
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 - ⚛️ **React** – Framework JavaScript para criação de interfaces de usuário.
@@ -38,8 +18,6 @@ Este projeto é uma **calculadora de IMC (Índice de Massa Corporal)** desenvolv
 - 🌐 **HTML** – Estrutura da página.
 - 🟢 **Node.js** – Ambiente de execução JavaScript no backend e ferramentas de build.
 - 💻 **Visual Studio Code** – Editor de código utilizado.
-
----
 
 ## ▶️ Como Executar o Projeto
 
@@ -51,8 +29,11 @@ Antes de começar, certifique-se de ter instalado:
 - npm (gerenciador de pacotes que vem junto com o Node.js)
 
 ### 🚀 Passos para Rodar
+    cd My-projects/IMC-CALCULADORA
+    npm install
+    npm run dev
 
-
+---
 
 ## 🛠️ Dev Treino(Java-Python)
 ##Descrição:
