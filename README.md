@@ -1,41 +1,26 @@
-<h1></h1>
-My Projects Course
+My Projects
+Repositório destinado aos meus projetos pessoais para treino e desenvolvimento de habilidades em Java e Python. Cada pasta representa um projeto independente, com foco em diferentes conceitos e tecnologias.
 
-<h1></h1>
-Esclarecimentos:
+📁 Estrutura do Repositório
+IMC-CALCULADORA/: Projeto de cálculo de Índice de Massa Corporal (IMC).
 
-1) Area focada no desenvolvimento de códigos dos exemplos do curso de Java.
-2) Cada Pasta deste Repositório é destinada a um projeto.
-3) Todos estes projetos são utilizados com a mesma IDE e demias informações a baixo.
+Dev Treino(Java-Python)/: Projetos diversos para prática de Java e Python.
 
-Como Rodar as aplicações ?
-1) Instale a IDE Eclipse.
-2) Instale o Java mais atual possivel(atual:21)
-3) Instale o MySQL e MySQL Workbench
-4) Link o acesso do servidor que o seu banco roda o MySQL com a IDE(Eclipse)
-5) Copie todos os códigos na mema estrutura fornecida
-6) Clique em RUN e seja feliz
+🧮 IMC-CALCULADORA
+Descrição
+Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo ao usuário inserir peso e altura para obter o resultado e a classificação correspondente.
 
-Areas Exploradas:
-- Java
-- POO
-- Spring Boot
-- Data e Date
-- Java FX
-- Java EE
-- Hibernate
-- Git e GitHub
-- JPA
-- API Rest
-- NoSQL
-- MongoDB
-- 
-<h1></h1>
+Tecnologias Utilizadas
+Java: Linguagem principal para a lógica de programação.
 
-Ferramentas de Desenvolvimento:
-- Java 21
-- IDE Eclipse
-- MySQL
-- MySQL Workbench 8.0 CE
+JavaFX: Biblioteca para criação de interfaces gráficas (GUI).
 
-<h1></h1>
+Objetivo
+Praticar a criação de interfaces gráficas e a aplicação de lógica condicional em Java, proporcionando uma ferramenta interativa para o cálculo de IMC.
+
+Como Executar
+Pré-requisitos:
+
+Java JDK 21 instalado.
+
+IDE Eclipse configurada com suporte a JavaFX.
