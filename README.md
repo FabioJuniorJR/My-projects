@@ -4,66 +4,49 @@ Repositório destinado aos meus projetos pessoais para treino e desenvolvimento 
 
 📁 Estrutura do Repositório
 - IMC-CALCULADORA/: Projeto de cálculo de Índice de Massa Corporal (IMC).
-
 - Dev Treino(Java-Python)/: Projetos diversos para prática de Java e Python.
 
 ## 🧮 IMC-CALCULADORA
 Descrição
 Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo ao usuário inserir peso e altura para obter o resultado e a classificação correspondente.
 
-🛠️ Tecnologias Utilizadas
-- Java: Linguagem principal para a lógica de programação.
 
-- JavaFX: Biblioteca para criação de interfaces gráficas (GUI).
 
-🎯 Objetivo
-- Praticar a criação de interfaces gráficas e a aplicação de lógica condicional em Java, proporcionando uma ferramenta   interativa para o cálculo de IMC.
-
-### 💻 Como Executar
-Pré-requisitos:
-
-Java JDK 21 instalado.
-
-IDE Eclipse configurada com suporte a JavaFX.
 
 ## 🛠️ Dev Treino(Java-Python)
-Descrição
+##Descrição:
 Conjunto de projetos desenvolvidos para praticar conceitos de programação em Java e Python, abrangendo desde fundamentos até tópicos mais avançados.
 
-Tecnologias Utilizadas
-Java: Para prática de Programação Orientada a Objetos (POO), manipulação de dados, entre outros.
+## 🛠️ Tecnologias Utilizadas
+- ☕ Java: Para prática de Programação Orientada a Objetos (POO), manipulação de dados, entre outros.
 
-Python: Para exercícios de lógica, estruturas de dados e automação.
+- 🐍 Python: Para exercícios de lógica, estruturas de dados e automação.
 
-Objetivo
-Aprimorar habilidades de programação através da implementação de diversos exercícios e pequenos projetos, consolidando o conhecimento em ambas as linguagens.
+## 🎯 Objetivo
+Aprimorar habilidades de programação e a lógica de programação através da implementação de diversos exercícios e pequenos projetos, consolidando o conhecimento em ambas as linguagens.
 
-Como Executar
-Pré-requisitos:
+## 💻 Como Executar
+### Pré-requisitos:
 
-Java JDK 21 e/ou Python 3.x instalados.
+- ☕ Java JDK 21 e/ou 🐍 Python 3.x instalados.
 
-IDE Eclipse para projetos Java.
+- IDE Eclipse para projetos Java.
 
-Editor de código (como VS Code) para projetos Python.
+- Editor de código (como VS Code) para projetos Python e Java.
 
 Passos:
+- Clone o repositório:
+    - bash
+    - Copiar
+    - Editar
+    - git clone https://github.com/FabioJuniorJR/My-projects.git
+    - Navegue até a pasta Dev Treino(Java-Python).
 
-Clone o repositório:
+Para projetos Java☕:
+  - Importe na IDE Eclipse e execute as classes principais.
 
-bash
-Copiar
-Editar
-git clone https://github.com/FabioJuniorJR/My-projects.git
-Navegue até a pasta Dev Treino(Java-Python).
-
-Para projetos Java:
-
-Importe na IDE Eclipse e execute as classes principais.
-
-Para projetos Python:
-
-Abra os arquivos .py no editor de código e execute conforme necessário.
+Para projetos Python🐍:
+  - Abra os arquivos .py no editor de código e execute conforme necessário.
 
 
 🧰 Ferramentas de Desenvolvimento
