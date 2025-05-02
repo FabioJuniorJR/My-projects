@@ -1,4 +1,5 @@
-My Projects
+# My Projects
+
 Repositório destinado aos meus projetos pessoais para treino e desenvolvimento de habilidades em Java e Python. Cada pasta representa um projeto independente, com foco em diferentes conceitos e tecnologias.
 
 📁 Estrutura do Repositório
@@ -6,7 +7,7 @@ Repositório destinado aos meus projetos pessoais para treino e desenvolvimento 
 
 - Dev Treino(Java-Python)/: Projetos diversos para prática de Java e Python.
 
-🧮 IMC-CALCULADORA
+## 🧮 IMC-CALCULADORA
 Descrição
 Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo ao usuário inserir peso e altura para obter o resultado e a classificação correspondente.
 
@@ -25,7 +26,7 @@ Java JDK 21 instalado.
 
 IDE Eclipse configurada com suporte a JavaFX.
 
-🛠️ Dev Treino(Java-Python)
+## 🛠️ Dev Treino(Java-Python)
 Descrição
 Conjunto de projetos desenvolvidos para praticar conceitos de programação em Java e Python, abrangendo desde fundamentos até tópicos mais avançados.
 
