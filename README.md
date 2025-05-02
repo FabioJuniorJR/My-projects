@@ -1,4 +1,4 @@
-<h1>My Projects<h1/>
+My Projects
 Repositório destinado aos meus projetos pessoais para treino e desenvolvimento de habilidades em Java e Python. Cada pasta representa um projeto independente, com foco em diferentes conceitos e tecnologias.
 
 📁 Estrutura do Repositório
@@ -11,12 +11,12 @@ Descrição
 Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo ao usuário inserir peso e altura para obter o resultado e a classificação correspondente.
 
 Tecnologias Utilizadas
-Java: Linguagem principal para a lógica de programação.
+- Java: Linguagem principal para a lógica de programação.
 
-JavaFX: Biblioteca para criação de interfaces gráficas (GUI).
+- JavaFX: Biblioteca para criação de interfaces gráficas (GUI).
 
 Objetivo
-Praticar a criação de interfaces gráficas e a aplicação de lógica condicional em Java, proporcionando uma ferramenta interativa para o cálculo de IMC.
+- Praticar a criação de interfaces gráficas e a aplicação de lógica condicional em Java, proporcionando uma ferramenta   interativa para o cálculo de IMC.
 
 Como Executar
 Pré-requisitos:
@@ -64,16 +64,18 @@ Para projetos Python:
 
 Abra os arquivos .py no editor de código e execute conforme necessário.
 
+
 🧰 Ferramentas de Desenvolvimento
-Java 21: Versão utilizada para os projetos em Java.
+- Java 21: Versão utilizada para os projetos em Java.
 
-IDE Eclipse: Ambiente de desenvolvimento para projetos Java.
+- IDE Eclipse: Ambiente de desenvolvimento para projetos Java.
 
-MySQL & MySQL Workbench 8.0 CE: Utilizados em projetos que requerem banco de dados.
+- MySQL & MySQL Workbench 8.0 CE: Utilizados em projetos que requerem banco de dados.
 
-Python 3.x: Versão utilizada para os projetos em Python.
+- Python 3.x: Versão utilizada para os projetos em Python.
 
 📌 Observações
 Certifique-se de ter as versões corretas das ferramentas instaladas para evitar incompatibilidades.
 
-Alguns projetos podem requerer configurações adicionais; consulte os arquivos específicos de cada projeto para mais detalhes.
+
+!!! Alguns projetos podem requerer configurações adicionais; consulte os arquivos específicos de cada projeto para mais detalhes. !!!
