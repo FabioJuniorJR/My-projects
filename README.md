@@ -19,7 +19,7 @@ Aplicação simples para cálculo do Índice de Massa Corporal (IMC), permitindo
 🎯 Objetivo
 - Praticar a criação de interfaces gráficas e a aplicação de lógica condicional em Java, proporcionando uma ferramenta   interativa para o cálculo de IMC.
 
-# 💻 Como Executar
+### 💻 Como Executar
 Pré-requisitos:
 
 Java JDK 21 instalado.
