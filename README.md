@@ -15,8 +15,7 @@ API REST desenvolvida em Java com Spring Boot, JPA e Hibernate para gerenciament
 🗂️ JPA  
 🐘 Hibernate  
 🧠 POO  
-📩 Postman (testes)  
-*(edite conforme necessário)*
+📩 Postman (testes, GET(ALL, ID), POST)  
 
 ---
 
@@ -32,7 +31,6 @@ Códigos de treino desenvolvidos em Java e Python. Inclui exercícios de lógica
 💡 Lógica de Programação  
 🧠 POO  
 📄 Exercícios diversos  
-*(edite conforme necessário)*
 
 ---
 
@@ -49,6 +47,5 @@ Aplicação web para cálculo de IMC com React. Utiliza gerenciamento de estado 
 🧩 Hooks (useState/useEffect)  
 🟢 Node.js  
 🖥️ Visual Studio Code  
-*(edite conforme necessário)*
 
 ---
