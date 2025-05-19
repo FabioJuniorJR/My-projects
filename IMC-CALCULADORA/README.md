@@ -1,12 +1,37 @@
-# React + Vite
+# 📊 Calculadora de IMC - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto funcional de uma **Calculadora de IMC (Índice de Massa Corporal)** desenvolvida com **React**. O usuário pode inserir altura e peso para calcular o IMC e visualizar a classificação conforme a tabela da OMS.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React.js**
+- 🧠 **React Hooks** (`useState`)
+- 💻 **JavaScript (ES6+)**
+- 🎨 **CSS3**
+- 🧾 **HTML5**
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Permitir que o usuário insira altura e peso para calcular seu IMC, exibir o resultado com a devida classificação (Magreza, Normal, Sobrepeso, Obesidade, Obesidade Grave) e estilizar dinamicamente com base na situação.
+
+## ⚙️ Funcionalidades
+
+- 🧮 **Cálculo do IMC** com base nos dados inseridos.
+- 🔄 **Gerenciamento de estado com React Hooks** (`useState`).
+- 🎯 **Classificação automática do IMC** conforme os valores da tabela.
+- 🎨 **Estilo visual reativo** com cores que indicam a condição de saúde.
+- 🧹 **Botão para limpar campos** e reiniciar o cálculo.
+- 📊 **Tabela de classificação** exibida com base nas faixas de IMC.
+
+## 🛠️ Como Executar o Projeto
+
+1. Clone o repositório:
+   git clone https://github.com/FabioJuniorJR/My-projects.git
+2. Navegue até a pagina do projeto
+  cd nome da pasta/IMC-CALCULADORA
+3. Instale as dependencias
+   npm install
+4. Execute o projeto
+   npm run dev
+5. Abra o link do Terminal
+   O projeto estará rodando em uma porta https://localhost:...
