@@ -50,7 +50,7 @@ Aplicação web para cálculo de IMC com React. Utiliza gerenciamento de estado 
 
 ---
 
-## 🛒 Atacado Eletrônico - Sistema Completo " Full Stack "
+## 🛒 Projeto 4: Atacado Eletrônico - Sistema Completo " Full Stack "
 
 **📝 Descrição:** 
 **Atacado Eletrônico**, um sistema completo de gerenciamento para um atacado de produtos eletrônicos. Este projeto simula a operação de uma empresa com duas áreas principais: **clientes** e **colaboradores** (administradores), com funcionalidades como cadastro de produtos, login seguro, relacionamento com fabricantes, catálogo público e painel administrativo.
@@ -105,7 +105,7 @@ frontend/
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/atacado-eletronico.git
+git clone https://github.com/FabioJuniorJR/Atacado Eletrônico
 ```
 2. Configure o `application.properties` com seus dados MySQL
 3. Rode o back-end (Spring Boot)
