@@ -85,36 +85,6 @@ Aplicação web para cálculo de IMC com React. Utiliza gerenciamento de estado 
 - 🧑‍💼 Painel administrativo para colaboradores com navegação entre páginas
 - 🔍 Consulta de produtos, fabricantes e clientes
 
-## 📁 Estrutura do Projeto
-
-```
-backend/
-├── model/
-├── dto/
-├── repository/
-├── service/
-└── controller/
-
-frontend/
-├── pages/
-├── components/
-└── App.jsx
-```
-
-## ⚙️ Como Rodar o Projeto
-
-1. Clone o repositório
-```bash
-git clone https://github.com/FabioJuniorJR/Atacado Eletrônico
-```
-2. Configure o `application.properties` com seus dados MySQL
-3. Rode o back-end (Spring Boot)
-4. Rode o front-end (React + Vite)
-```bash
-npm install
-npm run dev
-```
-
 ---
 
 
