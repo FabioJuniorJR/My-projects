@@ -19,6 +19,10 @@ Bem-vindo ao **Atacado Eletrônico**, um sistema completo de gerenciamento para 
 ### 🛢 Banco de Dados
 - ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
+### Modelo DER 
+![image](https://github.com/user-attachments/assets/b8269861-ef04-41b7-9fea-25922e134d9e)
+
+
 ### ☁️ Outros
 - ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white) para testar APIs REST
 - ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) + ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) para versionamento
