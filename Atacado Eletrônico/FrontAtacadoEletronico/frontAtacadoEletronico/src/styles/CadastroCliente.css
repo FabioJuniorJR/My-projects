@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: Inter, sans serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans serif;
+    background-color: #0f172a;
+}
+.screeen-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+    width: 100%;
+    height: 100%;
+    
+}
+.container{
+    display: flex;
+    width: 1050px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0,0.2);
+}
+.motivation{
+    
+    width: 50%;
+    background-color: #F1F5F9;
+    color: #1f2937;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.login-box{
+    width: 77%;
+    background-color: #1E293B;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-box h2{
+    background-color: #D9D9D9;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 350px;
+}
+input{
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8fafc;
+  
+}
+button{
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #38bdf8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+a{
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.seuhardware{
+    padding-left: 23%;
+    font-weight: bold;
+}
+.suahistoria{
+   padding-left: 0px;
+   font-weight: bold;
+}
+.comecarhistoria{
+    padding-left: 33%;
+    font-weight: bold;
+}
+.façavoce{
+    padding-left: 12%;
+    font-weight: bold;
+}
+.compre{
+    padding-left: 10%;
+    font-weight: bold;
+}
+.explore{
+    padding-left: 70%;
+    font-weight: bold;
+}
+.sedivirta{
+    padding-left: 25%;
+    font-weight: bold;
+}
+.tipoPessoa{
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 4px;
+    
+    
+}
