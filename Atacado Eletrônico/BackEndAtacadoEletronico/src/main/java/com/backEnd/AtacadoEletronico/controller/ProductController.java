@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,20 +29,21 @@ public class ProductController{
 	}
 	
 	@PostMapping
-	public Product postProduct(@RequestBody Product product) {
+	public Product postProduct(@RequestBody Product productEdit) {
+		productRepository.save(productEdit);
+		return productEdit;
+	}
+	
+	@PutMapping
+	public Product putProduct(@RequestBody Product product) {
 		productRepository.save(product);
 		return product;
 	}
 	
-	@PutMapping
-	public Product putProduct() {
-		
-		return product;
-	}
-	
-	@DeleteMapping
-	public Product deleteProduct() {
-		
+	@DeleteMapping("/{id}")
+	public Product deleteProduct(@PathVariable Long id) {
+		Product product = productRepository.findById(id).get();
+		productRepository.delete(product);
 		return product;
 	}
 	

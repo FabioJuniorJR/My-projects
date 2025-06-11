@@ -35,7 +35,7 @@ public class Product{
 	private String description;
 	
 	@ManyToOne(cascade = CascadeType.ALL)//Permite salvar junto na inserção os dois juntos
-	@JoinColumn(name="nameManufacture")
+	@JoinColumn(name="id_manufacture")
 	private Manufacture manufacture;
 
 	public Product() {}

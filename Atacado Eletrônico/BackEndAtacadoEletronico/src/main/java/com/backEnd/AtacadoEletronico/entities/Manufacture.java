@@ -15,7 +15,7 @@ public class Manufacture {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id", nullable = false)
+	@Column(name = "id_manufacture", nullable = false)
 	private Long id;
 	
 	@Column(name = "cnpj", length = 100, nullable = false)
@@ -23,6 +23,8 @@ public class Manufacture {
 	
 	@Column(name="name", length = 100, nullable = false)
 	private String name;
+	
+	public Manufacture() {}
 
 	public Manufacture(Long id, String cnpj, String name) {
 		super();

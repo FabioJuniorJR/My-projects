@@ -1,5 +1,7 @@
 package com.backEnd.AtacadoEletronico.entities;
 
+import java.util.List;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,14 +10,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="user")
+@Table(name="users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name="id_user")
     private int id;
     
     @Column(name="userName", length = 100, nullable = true)
@@ -34,9 +37,13 @@ public class User {
     @ManyToOne(cascade = CascadeType.ALL)//Permite fazer a inserção e salvar o endereço junto ao usuário
     private Address address;
     
+    //@JoinColumn(name="number_order")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Order> order;
+    
     public User() {} 
     
-	public User(int id, String name, String email, String password, String phone, Address address) {
+	public User(int id, String name, String email, String password, String phone, Address address, List<Order> order) {
 		//super();
 		this.id = id;
 		this.name = name;
@@ -44,8 +51,10 @@ public class User {
 		this.password = password;
 		this.phone = phone;
 		this.address = address;
+		this.order = order;
 	}
 	
+
 	public Address getAddress() {
 		return address;
 	}
@@ -83,6 +92,14 @@ public class User {
 	}
 	public String getPhone() {
 		return phone;
+	}
+
+	public List<Order> getOrder() {
+		return order;
+	}
+
+	public void setOrder(List<Order> order) {
+		this.order = order;
 	}
 
     
