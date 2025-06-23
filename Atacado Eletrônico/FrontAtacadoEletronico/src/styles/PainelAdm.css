@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: Inter, sans serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+}
+
+.page {
+  background-color: #1e293b;
+  min-height: 100vh;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #d1d5db;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.painel {
+  margin-top: 40px;
+  background-color: #d1d5db;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 40px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.card:hover {
+  background-color: #e2e8f0;
+}

@@ -1,0 +1,199 @@
+/* Seu MainCommerce.css */
+
+/* Estilos existentes */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(19, 19, 19);
+}
+.logo{
+    padding-left: 10%;
+    color: rgb(229, 230, 231);
+}
+.navHeader{
+    margin-right: 10%;
+}
+.navHeader a {
+    margin: 35px;
+    color: white; /* Ajustado para melhor visibilidade no seu header escuro */
+    text-decoration: none; /* Removido sublinhado padrão */
+}
+.AgrupaMenuCategoriaAndViewItems{
+    display: flex;
+    min-height: calc(100vh - 80px - 40px); /* Ajuste para preencher a tela, considerando header e footer */
+}
+.category{
+    width: 220px; /* Ajuste a largura do menu lateral */
+    background-color: rgb(27, 27, 27);
+    color: rgb(229, 230, 231);
+    padding: 0; /* Removido padding-left e padding-top para alinhar */
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+}
+.CategoriaH2{
+    width: 100%; /* Ocupa a largura total da categoria */
+    height: 50px; /* Altura um pouco maior para o título */
+    background-color: rgb(27, 27, 27);
+    color: rgb(229, 230, 231);
+    padding-left: 20px; /* Espaçamento interno */
+    display: flex; /* Para alinhar verticalmente */
+    align-items: center; /* Alinhar texto ao centro */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.categoryComponent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os ul de categorias */
+    padding: 20px; /* Padding interno para a nav */
+}
+.categoryComponent ul {
+    list-style: none; /* Remove bolinhas da lista */
+    padding: 0;
+    margin: 0;
+}
+.categoryComponent ul li {
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.categoryComponent ul li:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.type{
+    color: rgb(0, 123, 255);
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: bold;
+    display: block; /* Para que o padding funcione */
+    padding: 8px 0;
+}
+.type:hover {
+    color: rgb(150, 150, 250);
+}
+
+
+/* **NOVOS ESTILOS PARA ViewItems e Produtos** */
+.ViewItems{
+    background-color: rgb(24, 24, 24);
+    width: 100%; /* Ocupa o restante da largura */
+    padding: 20px; /* Padding interno */
+    box-sizing: border-box;
+    color: rgb(229, 230, 231);
+}
+
+.ViewItems h2 {
+    text-align: center;
+    color: rgb(0, 123, 255); /* Azul para o título de produtos */
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsivo: 250px mínimo, 1fr para preencher */
+    gap: 25px; /* Espaçamento entre os cartões */
+    justify-content: center; /* Centraliza a grade */
+}
+
+.product-card {
+    background-color: rgb(35, 35, 35); /* Fundo mais escuro para o card */
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: rgb(229, 230, 231);
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+    width: 100%;
+    max-height: 180px; /* Altura máxima para imagens */
+    object-fit: contain; /* Ajusta a imagem dentro da caixa sem cortar */
+    border-bottom: 1px solid rgb(60, 60, 60);
+    margin-bottom: 15px;
+}
+
+.no-image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 45, 45);
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: rgb(0, 123, 255); /* Azul para o nome do produto */
+    font-weight: bold;
+}
+
+.product-category, .product-description, .product-stock, .product-manufacturer {
+    font-size: 0.9em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(40, 200, 80); /* Verde para o preço */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+    background-color: rgb(255, 193, 7); /* Amarelo */
+    color: rgb(33, 33, 33);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: auto; /* Empurra o botão para baixo */
+}
+
+.add-to-cart-button:hover {
+    background-color: rgb(224, 168, 0);
+}
+
+.status-message {
+    text-align: center;
+    color: rgb(180, 180, 180);
+    padding: 20px;
+}
+
+.error-message {
+    text-align: center;
+    color: rgb(220, 53, 69); /* Vermelho para erros */
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: rgb(19, 19, 19);
+    color: rgb(229, 230, 231);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Garante que o footer fique na parte inferior */
+}

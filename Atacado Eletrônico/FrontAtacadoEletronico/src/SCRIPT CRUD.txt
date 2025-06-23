@@ -1,0 +1,30 @@
+-------EDIT PRODUCT --------
+{
+    "id": 1, 
+    "category":"Placa de Vídeo",
+    "name":"Geforce GTX 5060",
+    "price": 2499.99,
+    "qtdeStoke":7,
+    "description":"Placa de Vídeo Geforce RTX 5060 32GB  OVERCLOKED",
+    "imgURL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgbK1zqJ4QtXppWAg_vktynpwrahqB_BGY_Q&s",
+    "manufacture":{
+        "id": 1,
+        "cnpj": "89081980000101",
+        "name": "NVIDIA"
+    }
+}
+
+------- POST PRODUCT----------
+{
+    "category":"Placa de Vídeo",
+    "name":"RADEON 6900XT",
+    "price": 2599.99,
+    "qtdeStoke":8,
+    "description":"Placa de Vídeo Radeon 6900XT 16GB OVERCLOKED",
+    "imgURL":"https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/g/v/gv-r69xtgaming-oc-16gd7.jpg",
+    "manufacture":{
+        "id": 2,
+        "cnpj": "73081980000101",
+        "name": "AMD"
+    }
+}
