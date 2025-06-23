@@ -3,6 +3,8 @@ package com.backEnd.AtacadoEletronico.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +19,7 @@ import com.backEnd.AtacadoEletronico.repository.ProductRepository;
 
 @RestController
 @RequestMapping("/product")
+@CrossOrigin(origins = "http://localhost:5173")// Aqui coloca a PORT do Front End
 public class ProductController{
 	@Autowired
 	private ProductRepository productRepository;
@@ -34,10 +37,30 @@ public class ProductController{
 		return productEdit;
 	}
 	
-	@PutMapping
-	public Product putProduct(@RequestBody Product product) {
-		productRepository.save(product);
-		return product;
+	@PutMapping("/{id}")
+	public Product putProduct(@PathVariable Long id, @RequestBody Product productUpdate) {
+		
+		Product productFinded = productRepository.findById(id).get();
+		if(productFinded == null) {
+			System.out.println("Product not Found");
+		}else{
+			System.out.println("Product Found");
+			
+			productFinded.setCategory(productUpdate.getCategory());
+			productFinded.setDescription(productUpdate.getDescription());
+			productFinded.setId(productUpdate.getId());
+			productFinded.setImgURL(productUpdate.getImgURL());
+			productFinded.setManufacture(productUpdate.getManufacture());
+			productFinded.setName(productUpdate.getName());
+			productFinded.setPrice(productUpdate.getPrice());
+			productFinded.setQtdeStoke(productUpdate.getQtdeStoke());
+			
+			Product productAfterUpdate = productRepository.save(productUpdate);
+			return productAfterUpdate;
+		}
+		
+		System.out.println("Product Not Save");
+		return null;
 	}
 	
 	@DeleteMapping("/{id}")

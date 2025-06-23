@@ -16,7 +16,7 @@ import com.backEnd.AtacadoEletronico.entities.User;
 import com.backEnd.AtacadoEletronico.repository.UserRepository;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
@@ -30,7 +30,7 @@ public class UserController {
     }
     
     @GetMapping(value = "/{id}")// indica que aqui tera um numero para a pesquisa
-    public User userId(@PathVariable  int id){
+    public User userId(@PathVariable  Long id){
     	User userId = userRepository.findById(id).get();
     	return userId;
     }
@@ -48,7 +48,7 @@ public class UserController {
     }
     
     @DeleteMapping("/{id}")
-    public User deleteUser(@PathVariable int id) {
+    public User deleteUser(@PathVariable Long id) {
     	User userDelete = userRepository.findById(id).get();
     	userRepository.delete(userDelete);
     	return userDelete;

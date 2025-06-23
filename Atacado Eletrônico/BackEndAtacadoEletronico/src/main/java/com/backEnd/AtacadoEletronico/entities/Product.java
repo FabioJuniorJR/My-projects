@@ -16,7 +16,7 @@ public class Product{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id")
+	@Column(name="id_product")
 	private Long id;
 	
 	@Column(name = "category", length = 100, nullable = true)
@@ -34,6 +34,9 @@ public class Product{
 	@Column(name = "description", length = 100, nullable = true)
 	private String description;
 	
+	@Column(name="image_URL", nullable = true)
+	private String imgURL;
+	
 	@ManyToOne(cascade = CascadeType.ALL)//Permite salvar junto na inserção os dois juntos
 	@JoinColumn(name="id_manufacture")
 	private Manufacture manufacture;
@@ -41,7 +44,7 @@ public class Product{
 	public Product() {}
 	
 	public Product(Long id, String category, Manufacture manufacture, String name, double price, int qtdeStoke,
-			String description) {
+			String description, String img) {
 		//super();
 		this.id = id;
 		this.category = category;
@@ -50,6 +53,7 @@ public class Product{
 		this.price = price;
 		this.qtdeStoke = qtdeStoke;
 		this.description = description;
+		this.imgURL = img;
 	}
 
 	public Long getId() {
@@ -106,6 +110,14 @@ public class Product{
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getImgURL() {
+		return imgURL;
+	}
+
+	public void setImgURL(String imgURL) {
+		this.imgURL = imgURL;
 	}
 	
 	
